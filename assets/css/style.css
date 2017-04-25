@@ -45,15 +45,27 @@ a {
 
 }
 
-a:link { color: #790d0d; 
+a:link { 
+	color: #790d0d; 
 }
 
-a:hover { color: #777777; 
+a:hover {
+ 	color: #777777; 
 }
 
-a.one:hover {color:white;}
+a.one:hover {
+	color:white;
+}
 
+nav a:after {
+  color: #777777;
+  content: "|";
+  margin-left: 8px;
+}
 
+nav a:last-child:after {
+  content:"";
+}
 
 img {
 	float: left;
@@ -191,7 +203,7 @@ span.rps {
 	float: left;
 	position: absolute;
     background-color: #790d0d;
-    color: : black;
+    color: : white;
     padding: 1px 2px 0px 1px;
     margin-left: 160px;
     width: 17%;
@@ -223,13 +235,13 @@ span.rps {
 	border-right: 1px 
 	solid #000000;
     color: #ffffff;
-	border-right: 1px
-    padding: 20px
+    padding: 1px
 
 }
 
 .menu li:last { 
-	border-right: none 
+	display: none;
+	border-right: none;
 }
 
 .menu a:hover {
